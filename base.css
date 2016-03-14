@@ -1,0 +1,108 @@
+﻿@font-face {
+	font-family: 'Gotham-Book';
+	src: url('../images/fonts/Gotham-Book.eot');
+	src: url('../images/fonts/Gotham-Book.eot') format('embedded-opentype'),
+		 url('../images/fonts/Gotham-Book.woff') format('woff'),
+		 url('../images/fonts/Gotham-Book.ttf') format('truetype'),
+		 url('../images/fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+}
+@font-face {
+	font-family: 'Gotham-Book';
+	src: url('../images/fonts/Gotham-Bold.eot');
+	src: url('../images/fonts/Gotham-Bold.eot') format('embedded-opentype'),
+		 url('../images/fonts/Gotham-Bold.woff') format('woff'),
+		 url('../images/fonts/Gotham-Bold.ttf') format('truetype'),
+		 url('../images/fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+	font-weight:bold;
+}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+body, button, input, select, textarea { font:16px/1.5 "Gotham-Book", Helvetica,Verdana, Arial, "Microsoft YaHei",'微软雅黑'; color:#333; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; }
+html, body { height:100%;}
+html {/* _background-image:url(about:blank); _background-attachment:fixed;*/}
+em, i { font-style:normal; }
+ul, ol { list-style:none; }
+a { text-decoration:none; color:#333; outline:none; _blr:expression(this.onFocus=this.blur());}
+a:hover { text-decoration:none;}
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+.clear {zoom:1;}
+.clear:after {display: block;clear: both;visibility: hidden;height: 0;content: '';}
+
+
+#wrap { position: relative; min-height: 100%; _height: 100%; }
+.section { width: 100%; }
+.content { margin: 0 auto; width: 1002px; position: relative; }
+#header { width: 1040px; }
+#header-fixed { height: 101px; background-color: #E55E00;}
+#header-wrap { width: 100%; min-width: 960px; overflow: hidden; background:#E55E00; border-bottom: 1px #EF6A00 solid; z-index: 12; position: absolute; }
+.Front #header-wrap, .Front #header-fixed { background-color: transparent; }
+#header { height: 100px; padding: 0 0 1px; }
+#logo { text-indent: -999em; width: 153px; height: 50px; float: left; position: relative; top: 50%; margin: -25px 0 0 0; }
+#logo a { display: block; width: 100%; height: 100%; background: url(../images/logo.png) no-repeat; background-size: contain; -webkit-tap-highlight-color: rgba(0,0,0,0); }
+.small-screen #logo,.fixed #logo { width: 108px; height: 34px; margin-top: -17px; }
+.small-screen #logo a,.fixed #logo a { background-image: url(../images/logo_small.png); }
+/*.canTransition .fixed #logo a { background-image: url(../images/logo.png); }*/
+
+#container-wrap { padding: 0 0 35px; width: 100%; position: relative; z-index: 8; }
+
+/* footer */
+#footer-wrap { position: absolute; bottom: 0; width: 100%; left: 0; z-index: 10; }
+#footer { text-align: center; padding: 10px 0 5px; word-spacing: 5px; background: #fff; font-size: 12px; line-height: 20px; height: 20px; }
+#footer a:hover { text-decoration: underline; }
+.Front #footer { color: #fff; background: none; }
+.Front #footer a { color: #fff; }
+.foot-copy em { font-style: normal; opacity: .5; }
+
+.ie6 #footer-wrap { z-index:0; display:none}
+
+/*有的chrome安装了一些插件可能在页面底部插入一个div并嵌入一个object标签*/
+#ClCache { display: none; }
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+	#logo a { background-image: url(../images/x2/logo.png); }
+	.fixed #logo a { background-image: url(../images/x2/logo_small.png); }
+}
+
+@media (min-width:1002px) {
+	#header { width: 1002px; }
+}
+@media (min-width:1300px) {
+	#header,  .content { width: auto; max-width: 1200px; }
+}
+@media (min-width:791px) and (max-width:960px) {
+	#header { width: 960px; }
+	#menus a { padding: 0 20px; }
+}
+
+@media (max-width:800px) {
+	#footer a:nth-child(4):before { content: ""; display: block; clear: both; }
+	#header-wrap { min-width: 300px; }
+	#header-fixed, #header { width: auto; height: 50px; }
+	#header { height:49px;}
+	#logo,.fixed #logo { height: 50px; width: auto; margin:0 0 0 10px; position:static;}
+	#logo a,.fixed #logo a { width:62px; background: url(../images/x2/logo-small-2x.png) 0 18px no-repeat;background-size:100%; }
+	
+	#footer { font-size: 10px; }
+	.Front #footer { text-align: center; }
+	.content{ width: auto; min-width: 280px; }
+}
+@media (max-width:540px) {
+	#footer { word-spacing: 2px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
